@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+
+.menu {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  border: 1px solid #000;
+}
