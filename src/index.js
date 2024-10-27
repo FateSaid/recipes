@@ -16,9 +16,20 @@ function createImage(icon, string) {
   createDiv.classList.add("box");
   const myImage = new Image();
   myImage.src = icon;
+  myImage.setAttribute("alt", string);
   createDiv.textContent = string;
   createDiv.appendChild(myImage);
   recipe.appendChild(createDiv);
 }
 
+function eventHandler() {
+  const box = document.querySelectorAll(".box");
+  box.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log(item.textContent);
+    });
+  });
+}
+
 render();
+eventHandler();
