@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f5d0fe;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+header,
+footer {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+header {
+  font-size: 4rem;
+}
+
+.contain {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #000;
+  aspect-ratio: 2/1;
+  min-width: 1600px;
+  max-width: 1700px;
+  margin: 20px;
+  display: flex;
+  background-color: #f3a1e9;
+}
+
+.ingredient-title {
+  grid-column: 1/2;
+}
+
+.steps-title {
+  grid-column: 2/3;
+}
+
+.steps-title,
+.ingredient-title {
+  text-align: center;
+  font-size: 1.8rem;
+  align-self: center;
+  text-decoration-line: underline;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+.textbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link {
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 40%;
+  height: 100%;
+}
